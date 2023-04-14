@@ -1,0 +1,5 @@
+<p>protegida works!</p>
+<ul *ngIf="auth.user$ | async as user">
+  <li>{{ user | json }}</li>
+  <li>{{ user.email }}</li>
+</ul>
